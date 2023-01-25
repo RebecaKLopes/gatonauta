@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faça seu login</title>
+    <link rel="stylesheet" href="./estilos/login.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <main class="container">
+        <section class="img-logo">
+            <img src="./imagens/cat-animate.svg" alt="logo-gatonauta">
+        </section>
+        <section class="card">
+            <div class="content">
+                <h1>Faça login e acesse o <br> conteúdo</h1>
+                    <form>
+                        <div class="campo">
+                            <div class="infos">
+                                <label for="iemail"></label>
+                                <input type="email" name="E-mail" id="ilogin" autocomplete="email" placeholder="Digite seu e-mail">
+                            </div>
+                            <div class="infos">
+                                <label for="isenha"></label>
+                                <input type="password" name="senha" id="isenha" autocomplete="current-password" placeholder="Digite sua senha">
+                            </div>
+                            <input type="submit" value="Entrar" id="entrar">
+                        </div>
+                    </form>
+                    <div id="credencial-temporaria">
+                        <p >Login temporário: admin <br> Senha temporária: 123</p>
+                    </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

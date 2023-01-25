@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    background: #020714;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    height: 300px;
+    width: 400px;
+    text-align: center;
+    line-height: 60px;
+}
+
+
+h1{
+    color: rgb(204, 5, 5);
+    
+}
+
+h2{
+    color: rgb(255, 255, 255);
+}

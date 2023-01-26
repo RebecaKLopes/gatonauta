@@ -51,7 +51,8 @@ body{
     text-decoration: none;
     letter-spacing: 3px;
     font-weight: bold;
-    text-transform: uppercase;   
+    text-transform: uppercase; 
+    cursor: pointer;  
 }
 
 .menu:hover{

@@ -5,13 +5,13 @@
     padding: 0px;
 }
 
-a{
+header a{
     color: rgb(255, 255, 255);
     text-decoration:none ;
     font-family: sans-serif;
 }
 
-a:hover{
+header a:hover{
     background: #081537;
 }
 

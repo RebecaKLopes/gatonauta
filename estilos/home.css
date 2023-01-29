@@ -6,13 +6,13 @@
 }
 
 a{
-    color: black;
+    color: rgb(255, 255, 255);
     text-decoration:none ;
     font-family: sans-serif;
 }
 
 a:hover{
-    background: rgba(0, 0, 0,.05);
+    background: #081537;
 }
 
 #logo{
@@ -27,7 +27,7 @@ a:hover{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: rgb(226, 225, 225);
+    background: #020714;
 }
 
 #menu{
@@ -39,4 +39,76 @@ a:hover{
 #menu a{
     display: block;
     padding: .5rem;
+}
+
+#btn-mobile{
+    display: none;
+}
+
+@media(max-width: 600px){
+
+    #menu{
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        right: 0px;
+        background: #020714;
+        height: 0px;
+        z-index: 1000;
+        transition: .6s;
+        visibility: hidden;
+        overflow-y: hidden;
+    } 
+
+    #nav.active #menu{
+        height: calc(100vh - 70px);
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    #menu a{
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid rgba(103, 103, 103, 0.189);
+    }
+
+    #btn-mobile{
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+
+    #hamburguer{
+        border-top: 2px solid;
+        width: 20px;
+        color: white;
+    }
+
+    #hamburguer::after, #hamburguer::before{
+        content: '';
+        display: block;
+        border-top: 2px solid;
+        width: 20px;
+        color: white;
+        margin-top: 5px;
+        background: currentColor;
+        transition: 0.3s;
+        position: relative;
+    }
+
+    #nav.active #hamburguer{
+        border-top-color: transparent;
+    }
+
+    #nav.active #hamburguer::before{
+        transform: rotate(135deg);
+    }
+    #nav.active #hamburguer::after{
+        transform: rotate(-135deg);
+        top: -6.5px;
+    }
 }

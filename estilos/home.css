@@ -21,6 +21,7 @@ header a:hover{
 }
 
 #header{
+    width: 100vw;
     height: 70px;
     box-sizing: border-box;
     padding: 1rem;
@@ -30,6 +31,7 @@ header a:hover{
     background: #020714;
 }
 
+/*menu hambuerguer*/
 #menu{
     display: flex;
     list-style: none;
@@ -41,74 +43,111 @@ header a:hover{
     padding: .5rem;
 }
 
-#btn-mobile{
-    display: none;
+#menu{
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    right: 0px;
+    background: #020714;
+    height: 0px;
+    z-index: 1000;
+    transition: .6s;
+    visibility: hidden;
+    overflow-y: hidden;
+} 
+
+#nav.active #menu{
+    height: calc(100vh - 70px);
+    visibility: visible;
+    overflow-y: auto;
 }
 
-@media(max-width: 600px){
+#menu a{
+    padding: 1rem 0;
+    margin: 0 1rem;
+    border-bottom: 2px solid #6859c98f;
+}
 
-    #menu{
-        display: block;
-        position: absolute;
-        width: 100%;
-        top: 70px;
-        right: 0px;
-        background: #020714;
-        height: 0px;
-        z-index: 1000;
-        transition: .6s;
-        visibility: hidden;
-        overflow-y: hidden;
-    } 
+#btn-mobile{
+    display: flex;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
 
-    #nav.active #menu{
-        height: calc(100vh - 70px);
-        visibility: visible;
-        overflow-y: auto;
-    }
+#hamburguer{
+    border-top: 2px solid;
+    width: 20px;
+    color: white;
+}
 
-    #menu a{
-        padding: 1rem 0;
-        margin: 0 1rem;
-        border-bottom: 2px solid rgba(103, 103, 103, 0.189);
-    }
+#hamburguer::after, #hamburguer::before{
+    content: '';
+    display: block;
+    border-top: 2px solid;
+    width: 20px;
+    color: white;
+    margin-top: 5px;
+    background: currentColor;
+    transition: 0.3s;
+    position: relative;
+}
 
-    #btn-mobile{
-        display: flex;
-        padding: .5rem 1rem;
-        font-size: 1rem;
-        border: none;
-        background: none;
-        cursor: pointer;
-    }
+#nav.active #hamburguer{
+    border-top-color: transparent;
+}
 
-    #hamburguer{
-        border-top: 2px solid;
-        width: 20px;
-        color: white;
-    }
+#nav.active #hamburguer::before{
+    transform: rotate(135deg);
+}
 
-    #hamburguer::after, #hamburguer::before{
-        content: '';
-        display: block;
-        border-top: 2px solid;
-        width: 20px;
-        color: white;
-        margin-top: 5px;
-        background: currentColor;
-        transition: 0.3s;
-        position: relative;
-    }
+#nav.active #hamburguer::after{
+    transform: rotate(-135deg);
+    top: -6.5px;
+}
 
-    #nav.active #hamburguer{
-        border-top-color: transparent;
-    }
+/*conteudo*/
 
-    #nav.active #hamburguer::before{
-        transform: rotate(135deg);
-    }
-    #nav.active #hamburguer::after{
-        transform: rotate(-135deg);
-        top: -6.5px;
-    }
+main{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+
+}
+
+#intro{
+    height: 230px;
+}
+
+#intro h1{
+    padding: 30px;
+    font-size: 2rem;
+    margin-top: 10px;
+}
+
+#intro p{
+    padding: 15px;
+    align-items: center;
+}
+
+/*conteudo na area dos cursos*/
+
+.cursos{
+    width: 200px;
+    display: flex;
+    align-items: flex-start;
+    padding: 10px;
+    max-height: 180px;
+    margin-bottom: 60px;
+}
+
+#cursos{
+    align-items: center;
+}
+
+#cursos p{
+    font-size: 16px;
 }

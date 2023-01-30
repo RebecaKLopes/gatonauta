@@ -5,6 +5,13 @@
     padding: 0px;
 }
 
+body{
+    width: 100vw;
+    margin: 0px;
+    padding: 0px;
+}
+
+
 header a{
     color: rgb(255, 255, 255);
     text-decoration:none ;
@@ -114,7 +121,6 @@ header a:hover{
 main{
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 
 #intro{
@@ -143,7 +149,8 @@ main{
 #cursos-main p{
     font-size: 17px;
     margin-top: 30px;
-
+    display: flex;
+    margin: 30px auto;
 }
 
 #cursos-main a{
@@ -157,16 +164,16 @@ main{
 }
 
 .cursos-imagem{
+    display: flex;
     max-width: 300px;
     margin: 10px;
-    
+    margin: auto;
 }
 
 /*footer*/
 
 #footer{
     width: 100vw;
-    padding: 15px;
     background-color: black;
 }
 

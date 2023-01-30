@@ -135,19 +135,37 @@ main{
 
 /*conteudo na area dos cursos*/
 
-.cursos{
-    width: 200px;
+/*banner*/
+#img-principal{
+    width: 100vw;
+    margin-bottom: 50px;
+}
+
+.cursos-imagem{
+    width: 300px;
     display: flex;
-    align-items: flex-start;
     padding: 10px;
     max-height: 180px;
     margin-bottom: 60px;
 }
 
-#cursos{
-    align-items: center;
+#cursos-main{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
 }
 
-#cursos p{
+#cursos-main p{
     font-size: 16px;
+    margin-left: 20px;
+}
+
+#cursos-main a{
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #6859C9;
+    font-weight: bolder;
+
 }

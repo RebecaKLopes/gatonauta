@@ -113,9 +113,8 @@ header a:hover{
 
 main{
     display: flex;
-    flex-wrap: wrap;
-    width: 100vw;
-
+    flex-direction: column;
+    justify-content: center;
 }
 
 #intro{
@@ -126,46 +125,62 @@ main{
     padding: 30px;
     font-size: 2rem;
     margin-top: 10px;
+    text-align: center;
 }
 
 #intro p{
-    padding: 15px;
-    align-items: center;
+    text-align: center;
 }
 
-/*conteudo na area dos cursos*/
+/*conteudo da area de cursos*/
 
-/*banner*/
-#img-principal{
-    width: 100vw;
+#banner{
+    max-width: 100%;
     margin-bottom: 50px;
-}
-
-.cursos-imagem{
-    width: 300px;
-    display: flex;
-    padding: 10px;
-    max-height: 180px;
-    margin-bottom: 60px;
-}
-
-#cursos-main{
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
+    margin-top: 50px;
 }
 
 #cursos-main p{
-    font-size: 16px;
-    margin-left: 20px;
+    font-size: 17px;
+    margin-top: 30px;
+
 }
 
 #cursos-main a{
     display: block;
-    text-align: center;
-    margin-top: 10px;
+    font-size: 17px;
     text-decoration: none;
-    color: #6859C9;
+    color: black;
     font-weight: bolder;
+    text-align: center;
+    margin-top: 5px;
+}
 
+.cursos-imagem{
+    max-width: 300px;
+    margin: 10px;
+    
+}
+
+/*footer*/
+
+#footer{
+    width: 100vw;
+    padding: 15px;
+    background-color: black;
+}
+
+#redes-sociais{
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    padding-top: 10px;
+    margin-bottom: 2px;
+}
+
+#direitos{
+    color: white;
+    text-align: center;
+    font-size: 13px;
+    border-top: 1px solid rgba(255, 255, 255, 0.459);
 }

@@ -125,8 +125,9 @@ main{
 }
 
 #intro{
-    height: 200px;
-    background: #020714
+    height: 210px;
+    background: #020714;
+    margin: none;
 }
 
 #intro h1{
@@ -152,7 +153,7 @@ main{
     margin-top: 20px;
     background-color: #6859c98f;
     border-radius: 10px;
-    max-width: 400px;
+    max-width: 300px;
     min-height: 300px;
     margin: 30px auto;
     box-shadow: 2px 2px 10px rgba(128, 0, 128, 0.727);

@@ -126,9 +126,11 @@ main{
 
 #intro{
     height: 200px;
+    background: #020714
 }
 
 #intro h1{
+    color: white;
     padding: 30px;
     font-size: 2rem;
     margin-top: 10px;
@@ -137,6 +139,7 @@ main{
 }
 
 #intro p{
+    color: white;
     text-align: center;
     font-size: 16px;
     font-family: 'Roboto Slab', serif;
@@ -144,14 +147,6 @@ main{
 
 
 /*conteudo da area de cursos*/
-#banner{
-    max-width: 100%;
-    margin: auto;
-    display: flex;
-    padding-bottom: 15px;
-    border: 2px solid purple;
-    box-shadow: 2px 2px 10px rgba(128, 0, 128, 0.549);
-}
 
 .container-curso{
     margin-top: 20px;

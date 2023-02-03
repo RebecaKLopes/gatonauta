@@ -49,6 +49,10 @@ main{
     border: 2px solid purple;
 }
 
+#cursos-main{
+    margin-top: 15px;
+}
+
 #cursos-main p{
     font-size: 23px;
     margin-top: 30px;

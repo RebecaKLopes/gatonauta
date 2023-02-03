@@ -44,10 +44,14 @@ main{
 
 }
 
+.container-curso:hover{
+    box-shadow: 5px 5px 10px 5px rgba(128, 0, 128, 0.399);
+    border: 2px solid purple;
+}
+
 #cursos-main p{
-    font-size: 20px;
+    font-size: 23px;
     margin-top: 30px;
-    display: flex;
     margin: 30px auto;
     text-align: center;
     color: white;
@@ -55,12 +59,19 @@ main{
 
 #cursos-main a{
     display: block;
-    font-size: 19px;
+    font-size: 21px;
     text-decoration: none;
     color: black;
     font-weight: bolder;
     text-align: center;
-    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#cursos-main a:hover{
+    color: white;
+    font-size: 22px;
+    text-decoration: underline;
+    text-decoration-color: white;
 }
 
 .cursos-imagem{
